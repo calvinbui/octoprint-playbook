@@ -1,0 +1,3 @@
+- user: pi
+  state: present
+  key: https://github.com/calvinbui.keys

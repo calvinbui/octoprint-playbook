@@ -1,0 +1,5 @@
+---
+
+apt_install_packages:
+  - name: libgtk-3-0 xserver-xorg xinit xserver-xorg-input-evdev xinput
+  - name: libxaw7-dev libxxf86vm-dev libxaw7-dev libxft-dev

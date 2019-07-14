@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  pre_tasks:
+    - name: Update apt cache.
+      apt:
+        update_cache: true
+        cache_valid_time: 600
+      changed_when: false
+  roles:
+    - calvinbui.ansible_apt
+    - calvinbui.ansible_pip
+    - calvinbui.ansible_authorized_keys
